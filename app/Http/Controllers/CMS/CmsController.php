@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers\Cms;
 
-use Request;
+use Illuminate\Http\Request;
 
 /**
  * Class CmsController
@@ -17,7 +17,7 @@ class CmsController
      */
     public function index(Request $request)
     {
-        $pageSlug = Request::route()->getName();
+        $pageSlug = $request->route()->getName();
         return view('cms.' . $pageSlug);
     }
 

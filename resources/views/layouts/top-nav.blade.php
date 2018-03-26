@@ -8,26 +8,26 @@
 
     <div class="collapse navbar-collapse" id="navbarsExampleDefault">
         <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-                <a class="nav-link" href="{{route('home')}}">Home <span class="sr-only">(current)</span></a>
+            <li class="nav-item  {{ Request::path() ==  '/' ? 'active' : ''  }}">
+                <a class="nav-link" href="{{route('home')}}">Home <span class="sr-only"></span></a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item {{ Request::path() ==  'zone' ? 'active' : ''  }}">
                 <a class="nav-link" href="{{route('zone')}}">Zoning Report </a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link disabled" href="{{route('faq')}}">FAQ </a>
+            <li class="nav-item {{ Request::path() ==  'faq' ? 'active' : ''  }}">
+                <a class="nav-link" href="{{route('faq')}}">FAQ </a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link disabled" href="{{route('about')}}">About </a>
+            <li class="nav-item {{ Request::path() ==  'about' ? 'active' : ''  }}">
+                <a class="nav-link" href="{{route('about')}}">About </a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link disabled" href="{{route('updates')}}">Updates </a>
+            <li class="nav-item {{ Request::path() ==  'updates' ? 'active' : ''  }}">
+                <a class="nav-link" href="{{route('updates')}}">Updates </a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link disabled" href="{{route('blog')}}">Blog </a>
+            <li class="nav-item {{ Request::path() ==  'blog' ? 'active' : ''  }}">
+                <a class="nav-link" href="{{route('blog')}}">Blog </a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link disabled" href="{{route('contact')}}">Contact </a>
+            <li class="nav-item {{ Request::path() ==  'contact' ? 'active' : ''  }}">
+                <a class="nav-link" href="{{route('contact')}}">Contact </a>
             </li>
 
         </ul>

@@ -15,9 +15,10 @@ Auth::routes();
 
 
 Route::get('/', 'CMS\CmsController@index')->name('home');
-Route::get('/zone', 'CMS\CmsController@index')->name('zone');
 Route::get('/faq', 'CMS\CmsController@index')->name('faq');
 Route::get('/about', 'CMS\CmsController@index')->name('about');
 Route::get('/updates', 'CMS\CmsController@index')->name('updates');
 Route::get('/blog', 'CMS\CmsController@index')->name('blog');
 Route::get('/contact', 'CMS\CmsController@index')->name('contact');
+Route::get('/zone', 'Form\FormController@index')->name('zone');
+Route::post('/zone', 'Form\FormController@post')->name('postZone');
