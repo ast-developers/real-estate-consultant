@@ -1,7 +1,38 @@
 @extends('layouts.app')
 
 @section('content')
-    <h1>Contact</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur mattis risus quis quam iaculis accumsan. Phasellus porttitor ex et accumsan efficitur. In vel leo a ex bibendum imperdiet nec vitae magna. Mauris aliquam tellus eget ipsum interdum, eget mattis orci posuere. Integer at dui lectus. Cras hendrerit ultrices mauris at consequat. Donec dapibus quam ac tortor maximus, sed scelerisque magna vulputate. Mauris in euismod diam, id placerat lectus. Aenean maximus lacus felis, in elementum dolor condimentum et. Curabitur laoreet nisl a mauris finibus, et dictum felis pulvinar. Curabitur in lacinia libero. Integer cursus magna commodo fringilla vulputate. Aenean congue justo molestie tristique malesuada.<p><br>
-    <p>Sed nec laoreet urna. Nulla congue, elit laoreet sagittis pretium, dui lacus faucibus dolor, ut venenatis velit orci quis magna. Integer lacus libero, bibendum eget rutrum vitae, congue eget ligula. Praesent consequat lorem vel nisl eleifend ornare. Morbi tincidunt leo ac lectus tempor facilisis. Mauris vitae velit enim. Aliquam cursus ante vehicula eleifend lobortis. Suspendisse vel tristique ipsum. Fusce eleifend ac lacus nec vehicula. Duis ac fermentum mauris. Integer ornare ipsum eu lorem fermentum cursus. Mauris dignissim auctor mauris nec pharetra.</p>
+    <div class="contact-us">
+        <div class="row justify-content-center align-content-center">
+            <div class="col-md-6">
+                <img src="{{url('/public/images/logo.png')}}" class="img-responsive">
+            </div>
+            <div class="offset-md-1 col-md-5 contact-person">
+                <h1>Michael Burk</h1>
+                <span>Director of Business Development</span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6"></div>
+            <div class="offset-md-1 col-md-5 contact-details">
+                <ul class="address-details">
+                    <li>
+                        <i class="fa fa-map-marker-alt"></i>
+                        <address>
+                            121 E Crogan St, Suite 16<br>
+                            Lawrencevilla GA, 30046
+                        </address>
+                    </li>
+                    <li>
+                        <i class="fa fa-phone"></i>
+                        <span>(470) 587-4198</span>
+                    </li>
+                    <li>
+                        <i class="fa fa-globe"></i>
+                        <a href="www.reliantduediligence.com"
+                           title="Reliantdue Diligence">www.reliantduediligence.com</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
 @endsection

@@ -1,13 +1,15 @@
 
-<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-    <a class="navbar-brand" href="#">REC</a>
+<nav class="topmenu navbar navbar-expand-md fixed-top">
+    <a class="navbar-brand col-md-4" href="#">
+        <img src="{{url('/public/images/logo.png')}}" class="img-responsive">
+    </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
             aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
 
-    <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-        <ul class="navbar-nav mr-auto">
+    <div class="collapse navbar-collapse justify-content-end" id="navbarsExampleDefault">
+        <ul class="navbar-nav">
             <li class="nav-item  {{ Request::path() ==  '/' ? 'active' : ''  }}">
                 <a class="nav-link" href="{{route('home')}}">Home <span class="sr-only"></span></a>
             </li>
