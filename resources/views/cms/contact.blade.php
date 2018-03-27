@@ -2,19 +2,18 @@
 
 @section('content')
     <div class="contact-us">
-        <div class="row justify-content-center align-content-center">
-            <div class="col-md-6">
+        <div class="row">
+            <div class="col-lg-6">
                 <img src="{{url('/public/images/logo.png')}}" class="img-responsive">
             </div>
-            <div class="offset-md-1 col-md-5 contact-person">
+            <div class="offset-lg-1 col-lg-5 contact-person">
                 <h1>Michael Burk</h1>
                 <span>Director of Business Development</span>
             </div>
         </div>
         <div class="row">
-            <div class="col-md-6"></div>
-            <div class="offset-md-1 col-md-5 contact-details">
-                <ul class="address-details">
+            <div class="offset-lg-7  col-lg-5 contact-details">
+                <ul class="address-details mb-4">
                     <li>
                         <i class="fa fa-map-marker-alt"></i>
                         <address>

@@ -3,7 +3,7 @@ body {
 }
 .starter-template {
     padding: 3rem 1.5rem;
-    text-align: center;
+
 }
 /* Sticky footer styles
 -------------------------------------------------- */
@@ -98,3 +98,5 @@ ul.address-details li address {
     padding-right: 0;
 }
 
+.nav-tabs .nav-item { margin: 0px 1px 1px;}
+.nav-link { padding: 10px 15px!important;}

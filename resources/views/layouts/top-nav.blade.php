@@ -1,6 +1,6 @@
 
-<nav class="topmenu navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-    <a class="navbar-brand col-md-4 col-sm-4 col-9" href="#">
+<nav class="topmenu navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <a class="navbar-brand  col-md-4 col-sm-6 col-9" href="#">
         <img src="{{url('/public/images/logo.png')}}" class="img-responsive">
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
@@ -9,7 +9,7 @@
     </button>
 
     <div class="collapse navbar-collapse justify-content-end" id="navbarsExampleDefault">
-        <ul class="navbar-nav  nav nav-tabs">
+        <ul class="navbar-nav  nav nav-tabs ">
             <li class="nav-item  {{ Request::path() ==  '/' ? 'active' : ''  }}">
                 <a class="nav-link" href="{{route('home')}}">Home <span class="sr-only"></span></a>
             </li>
@@ -31,7 +31,6 @@
             <li class="nav-item {{ Request::path() ==  'contact' ? 'active' : ''  }}">
                 <a class="nav-link" href="{{route('contact')}}">Contact </a>
             </li>
-
         </ul>
     </div>
 </nav>

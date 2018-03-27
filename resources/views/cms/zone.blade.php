@@ -28,16 +28,14 @@
                     <label for="customerInfo.first_name" class="col-lg-2 col-sm-3 col-form-label">First Name</label>
                     <div class="col-lg-10 col-sm-9">
                         <input type="text" name="customerInfo[first_name]" id="customerInfo.first_name"
-                               class="form-control"
-                               placeholder="First Name">
+                               class="form-control">
                     </div>
                 </div>
                 <div class="form-group row">
                     <label for="customerInfo.last_name" class="col-lg-2 col-sm-3 col-form-label">Last Name</label>
                     <div class="col-lg-10 col-sm-9">
                         <input type="text" name="customerInfo[last_name]" id="customerInfo.last_name"
-                               class="form-control"
-                               placeholder="Last Name">
+                               class="form-control">
                     </div>
                 </div>
             </div>
@@ -53,15 +51,13 @@
                     <label for="siteInfo.name" class="col-lg-2 col-sm-3 col-form-label">Site Name</label>
                     <div class="col-lg-10 col-sm-9">
                         <input type="text" name="siteInfo[name]" id="siteInfo.name"
-                               class="form-control"
-                               placeholder="Site Name">
+                               class="form-control">
                     </div>
                 </div>
                 <div class="form-group row">
                     <label for="siteInfo.url" class="col-lg-2 col-sm-3 col-form-label">URL</label>
                     <div class="col-lg-10 col-sm-9">
-                        <input type="text" name="siteInfo[url]" id="siteInfo.url" class="form-control"
-                               placeholder="URL">
+                        <input type="text" name="siteInfo[url]" id="siteInfo.url" class="form-control">
                     </div>
                 </div>
             </div>
@@ -76,23 +72,21 @@
                     <label for="billingInfo.first_name" class="col-lg-2 col-sm-3 col-form-label">First Name</label>
                     <div class="col-lg-10 col-sm-9">
                         <input type="text" name="billingInfo[first_name]" id="billingInfo.first_name"
-                               class="form-control"
-                               placeholder="First Name">
+                               class="form-control">
                     </div>
                 </div>
                 <div class="form-group row">
                     <label for="billingInfo.last_name" class="col-lg-2 col-sm-3 col-form-label">Last Name</label>
                     <div class="col-lg-10 col-sm-9">
-                        <input type="text" name="billingInfo[last_name]" id="billingInfo.last_name" class="form-control"
-                               placeholder="Last Name">
+                        <input type="text" name="billingInfo[last_name]" id="billingInfo.last_name" class="form-control">
                     </div>
                 </div>
             </div>
         </div>
         <div class="clearfix">&nbsp;</div>
         <div class="row">
-            <div class="col-sm-12">
-                <input type="submit" value="Submit" class="btn btn-primary">
+            <div class="col-sm-12 pb-5">
+                <input type="submit" value="Submit" id="submitForm" class="btn btn-primary">
             </div>
         </div>
     </form>
