@@ -66,7 +66,7 @@ class FormController
                 $m->attach(($file_path));
             });
 
-            return redirect('zone')->with('success', 'Billing Mail sent successfully.');
+            return redirect('zone')->with('success', 'Billing mail sent successfully.');
         } catch (\Exception $e) {
             return redirect('zone')->with('error', 'Something went wrong.');
         }

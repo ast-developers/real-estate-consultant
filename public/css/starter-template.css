@@ -38,6 +38,13 @@ nav.topmenu {background-color: #e4dfca !important;}
 div#navbarsExampleDefault a.nav-link {
     color: #60412b;
 }
+div#navbarsExampleDefault  a:hover,
+div#navbarsExampleDefault .active a {
+    background-color: #60412b;
+    color: #fff;
+    border: 1px solid transparent;
+}
+
 .contact-person {
     text-align: left;
 }
@@ -90,3 +97,4 @@ ul.address-details li address {
     padding-left: 0;
     padding-right: 0;
 }
+

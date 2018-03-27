@@ -9,7 +9,7 @@
     </button>
 
     <div class="collapse navbar-collapse justify-content-end" id="navbarsExampleDefault">
-        <ul class="navbar-nav">
+        <ul class="navbar-nav  nav nav-tabs">
             <li class="nav-item  {{ Request::path() ==  '/' ? 'active' : ''  }}">
                 <a class="nav-link" href="{{route('home')}}">Home <span class="sr-only"></span></a>
             </li>
