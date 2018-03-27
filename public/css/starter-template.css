@@ -34,7 +34,7 @@ img {
     display: block;
     clear: both;
 }
-nav.topmenu {background-color: #e4dfca}
+nav.topmenu {background-color: #e4dfca !important;}
 div#navbarsExampleDefault a.nav-link {
     color: #60412b;
 }

@@ -1,6 +1,6 @@
 
-<nav class="topmenu navbar navbar-expand-md fixed-top">
-    <a class="navbar-brand col-md-4" href="#">
+<nav class="topmenu navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+    <a class="navbar-brand col-md-4 col-sm-4 col-9" href="#">
         <img src="{{url('/public/images/logo.png')}}" class="img-responsive">
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
