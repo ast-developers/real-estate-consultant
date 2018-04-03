@@ -32,9 +32,10 @@ class CmsController
             $subject = $req['subject'];
             $message = $req['message'];
 
-            Mail::send('emails.contactMail', ['content' => $message], function ($m) use ($subject) {
+            Mail::send('emails.contactMail', ['content' => $message, 'name' => $name, 'subject' => $subject], function ($m){
+
                 $m->to(env('MAIL_BILLING_EMAIL'));
-                $m->subject(env('APP_NAME') . ' | ' . $subject);
+                $m->subject(env('APP_NAME') . ' | Enquiry');
             });
 
             return redirect('contact')->with('success', 'Mail sent successfully.');
