@@ -20,5 +20,6 @@ Route::get('/about', 'CMS\CmsController@index')->name('about');
 Route::get('/updates', 'CMS\CmsController@index')->name('updates');
 Route::get('/blog', 'CMS\CmsController@index')->name('blog');
 Route::get('/contact', 'CMS\CmsController@index')->name('contact');
+Route::post('/contact', 'CMS\CmsController@post')->name('postContact');
 Route::get('/zone', 'Form\FormController@index')->name('zone');
 Route::post('/zone', 'Form\FormController@post')->name('postZone');
