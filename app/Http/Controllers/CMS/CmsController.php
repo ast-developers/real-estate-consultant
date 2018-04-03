@@ -34,7 +34,7 @@ class CmsController
 
             Mail::send('emails.contactMail', ['content' => $message, 'name' => $name, 'subject' => $subject], function ($m){
 
-                $m->to(env('MAIL_BILLING_EMAIL'));
+                $m->to(env('MAIL_CONTACT_EMAIL'));
                 $m->subject(env('APP_NAME') . ' | Enquiry');
             });
 
