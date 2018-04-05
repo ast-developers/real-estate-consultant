@@ -54,7 +54,7 @@
 
                     <div class="row">
                         <div class="col-sm-12 pb-5">
-                            <input type="submit" value="Submit" id="submitForm" class="btn btn-primary">
+                            <input type="submit" value="Submit" id="submitForm" class="btn btn-default">
                         </div>
                     </div>
 

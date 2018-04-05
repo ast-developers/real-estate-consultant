@@ -9,4 +9,5 @@
     <link href="{{URL::asset('public/css/fontawesome.min.css')}}" rel="stylesheet">
     <link href="{{URL::asset('public/css/fa-regular.css')}}" rel="stylesheet">
     <link href="{{URL::asset('public/css/starter-template.css')}}" rel="stylesheet">
+    <link href="{{URL::asset('public/css/zoneTab.css')}}" rel="stylesheet">
 </head>
