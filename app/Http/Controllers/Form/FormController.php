@@ -26,7 +26,7 @@ class FormController
     public function index(Request $request)
     {
         $pageSlug = $request->route()->getName();
-        return view('cms.' . $pageSlug);
+	    return view('cms.' . $pageSlug);
     }
 
     public function post(Request $request)
@@ -35,7 +35,22 @@ class FormController
             $customerInfo = $request['customerInfo'];
             $siteInfo = $request['siteInfo'];
             $billingInfo = $request['billingInfo'];
-            $title_array = [];
+			$data=[];
+			$attachments=[];
+
+			if($request->hasfile('fileInfo'))
+			{
+				foreach($request->file('fileInfo') as $file)
+				{
+					$name=time().$file->getClientOriginalName();
+					$newFileName=$name;
+					$file->move(public_path().DIRECTORY_SEPARATOR.'Uploads'.DIRECTORY_SEPARATOR,$newFileName );
+					$data[] = $newFileName;
+					$attachments[] = public_path() .DIRECTORY_SEPARATOR. 'Uploads' .DIRECTORY_SEPARATOR. $newFileName;
+
+				}
+			}
+			$title_array = [];
             $value_array = [];
             foreach ($customerInfo as $key => $value) {
                 $title_array[] = 'Customer Info - ' . ucfirst(str_replace('_', ' ', $key));
@@ -58,15 +73,18 @@ class FormController
                 });
             })->store('xls');
 
-            $file_path = storage_path() . '/exports/' . $file_name . '.xls';
+            $file_path = storage_path() .DIRECTORY_SEPARATOR. 'exports' .DIRECTORY_SEPARATOR. $file_name . '.xls';
+            $attachments[] = $file_path;
 
-            Mail::send('emails.mail', [], function ($m) use ($file_path) {
+            Mail::send('emails.mail', [], function ($m) use ($attachments) {
                 $m->to(env('MAIL_BILLING_EMAIL'));
                 $m->subject(env('APP_NAME') . ' | Billing Info');
-                $m->attach(($file_path));
+				foreach ($attachments as $attach){
+					$m->attach($attach);
+				}
             });
 
-            return redirect('zone')->with('success', 'Billing mail sent successfully.');
+            return redirect('contact')->with('success', 'Thank You !!!.....We are Contacted in less than 48 hours.');
         } catch (\Exception $e) {
             return redirect('zone')->with('error', 'Something went wrong.');
         }

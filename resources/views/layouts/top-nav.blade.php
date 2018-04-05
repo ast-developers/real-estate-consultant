@@ -1,6 +1,6 @@
 
 <nav class="topmenu navbar navbar-expand-lg navbar-light bg-light fixed-top">
-    <a class="navbar-brand  col-md-4 col-sm-6 col-9" href="#">
+    <a class="navbar-brand  col-md-3 col-sm-3 col-9" href="{{route('home')}}">
         <img src="{{url('/public/images/logo.png')}}" class="img-responsive">
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
@@ -22,15 +22,21 @@
             <li class="nav-item {{ Request::path() ==  'about' ? 'active' : ''  }}">
                 <a class="nav-link" href="{{route('about')}}">About </a>
             </li>
-            <li class="nav-item {{ Request::path() ==  'updates' ? 'active' : ''  }}">
-                <a class="nav-link" href="{{route('updates')}}">Updates </a>
+            <li class="nav-item {{ (Request::path() ==  'updates' ||Request::path() ==  'blog') ? 'active' : ''  }} dropdown">
+                <a class="nav-link dropdown-toggle" href="{{route('updates')}}" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Updates
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="{{route('blog')}}">Blog</a>
+                </div>
             </li>
-            <li class="nav-item {{ Request::path() ==  'blog' ? 'active' : ''  }}">
-                <a class="nav-link" href="{{route('blog')}}">Blog </a>
-            </li>
+
+
             <li class="nav-item {{ Request::path() ==  'contact' ? 'active' : ''  }}">
                 <a class="nav-link" href="{{route('contact')}}">Contact </a>
             </li>
         </ul>
     </div>
 </nav>
+
+
