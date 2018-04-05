@@ -1,6 +1,6 @@
 <div class="card">
     <h5 class="card-header">
-        Upload File
+        Upload Documents
     </h5>
     <div class="card-body">
         <div class="form-group row">
