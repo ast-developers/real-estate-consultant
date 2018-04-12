@@ -139,6 +139,20 @@ a {
 a:hover{
     color:#60412b
 }
+dl.termsandconditions dl{
+    margin-top: 5px;
+}
+dl.termsandconditions > dt {
+    font-size: 18px;
+}
+dl.termsandconditions > dd {
+    margin-bottom: 15px;
+}
+dl.termsandconditions ul {
+    list-style: none;
+    margin-bottom: 0;
+    padding-left: 20px;
+}
 @media (min-width:1200px){
 
     nav.topmenu {

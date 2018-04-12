@@ -13,9 +13,9 @@
                 <li class="nav-item ">
                     <a class="nav-link" href="{{route('policy')}}">Privacy Policy</a>
                 </li>
-                <li class="nav-item ">
-                    <a class="nav-link" href="{{route('liability')}}">Limits of Liability</a>
-                </li>
+                {{--<li class="nav-item ">--}}
+                    {{--<a class="nav-link" href="{{route('liability')}}">Limits of Liability</a>--}}
+                {{--</li>--}}
             </ul>
         </div>
     </div>
