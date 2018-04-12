@@ -11,7 +11,7 @@
             </div>
         </div>
         <div  class="form-group row">
-            <label class="checkbox-inline col-lg-8 col-sm-4 col-form-label"><input type="checkbox" value="0" name="terms" id="terms">&nbsp I agree with the <a href="{{route('termsCondition')}}">Terms of service</a> , <a href="{{route('policy')}}">Privacy policy</a> and <a href="{{route('liability')}}">Limits of Liability</a></label>
+            <label class="checkbox-inline col-lg-8 col-sm-4 col-form-label"><input type="checkbox" value="0" name="terms" id="terms">&nbsp I agree with the <a href="{{route('termsCondition')}}">Terms of service</a> and <a href="{{route('policy')}}">Privacy policy</a> .</label>
         </div>
        </div>
 </div>
