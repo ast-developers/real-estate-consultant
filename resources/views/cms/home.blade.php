@@ -11,6 +11,6 @@
         <p>Reliant Due Diligence engages collegiate educated researchers from the world’s top universities and report reviewers that are current and previous land developers and municipal planners. This 2 step process ensures that multiple people review each report to minimize errors and avoid bias in the analysis. We look at each case objectively and provide clear and concise conclusions.</p>
         <p>Our Essential Zoning report contains ALTA Table A, 6a and 6b items and meets ALTA 3.0/3.1 Fannie Mae and Freddie Mac Zoning Endorsement Requirements</p>
         <p>Sample Report</p>
-        <p>A sample Essential Zoning Report can be found <a href="{!! url('assets/sample-report.pdf') !!}">here</a></p>
+        <p>A sample Essential Zoning Report can be found <a href="{!! url('public/assets/sample-report.pdf') !!}">here</a></p>
     </div>
 @endsection

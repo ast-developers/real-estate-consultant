@@ -23,7 +23,7 @@
                     <li>A copy of a Zoning Verification Letter From the municipality (if provided)</li>
                 </ul>
                 <p>Sample Report</p>
-                <p>A sample Essential Zoning Report can be found <a href="{!! url('assets/sample-report.pdf') !!}">here</a></p>
+                <p>A sample Essential Zoning Report can be found <a href="{!! url('public/assets/sample-report.pdf') !!}">here</a></p>
             </div>
         </div>
     </div>
