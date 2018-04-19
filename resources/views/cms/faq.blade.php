@@ -2,6 +2,135 @@
 
 @section('content')
     <h1>FAQ</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur mattis risus quis quam iaculis accumsan. Phasellus porttitor ex et accumsan efficitur. In vel leo a ex bibendum imperdiet nec vitae magna. Mauris aliquam tellus eget ipsum interdum, eget mattis orci posuere. Integer at dui lectus. Cras hendrerit ultrices mauris at consequat. Donec dapibus quam ac tortor maximus, sed scelerisque magna vulputate. Mauris in euismod diam, id placerat lectus. Aenean maximus lacus felis, in elementum dolor condimentum et. Curabitur laoreet nisl a mauris finibus, et dictum felis pulvinar. Curabitur in lacinia libero. Integer cursus magna commodo fringilla vulputate. Aenean congue justo molestie tristique malesuada.<p><br>
-    <p>Sed nec laoreet urna. Nulla congue, elit laoreet sagittis pretium, dui lacus faucibus dolor, ut venenatis velit orci quis magna. Integer lacus libero, bibendum eget rutrum vitae, congue eget ligula. Praesent consequat lorem vel nisl eleifend ornare. Morbi tincidunt leo ac lectus tempor facilisis. Mauris vitae velit enim. Aliquam cursus ante vehicula eleifend lobortis. Suspendisse vel tristique ipsum. Fusce eleifend ac lacus nec vehicula. Duis ac fermentum mauris. Integer ornare ipsum eu lorem fermentum cursus. Mauris dignissim auctor mauris nec pharetra.</p>
+    <img class="img-responsive mb-3 hero-banner" src="{!! url('public/images/faq.jpg') !!}">
+    <div id="accordion">
+        <div class="card">
+            <div class="card-header" id="headingOne">
+                <h5 class="mb-0" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    <button class="btn btn-link">
+                        Why is zoning important?
+                    </button>
+                </h5>
+            </div>
+
+            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                <div class="card-body">
+                    Since the supreme court case of Village of Euclid v. Amber Realty Co. in 1926 zoning has become more and more prevalent in the United States. In that case the Village of Euclid had 6 zoning classes that were affirmed by the supreme court. The court cited that zoning provided for the “general health and welfare” of the public. The intent of the ordinance was to separate noxious or undesired uses from neighboring residential properties that could change the character of the neighborhood. Now, for instance, the city of Atlanta GA has over 60 zoning classes with restrictions including land use, parking, building heights, build setbacks, tree canopy coverage, building materials, lighting. These 60 zoning classes can also be affected by overlay districts and historic districts that can add complexity to each property exponentially.
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header" id="headingTwo">
+                <h5 class="mb-0 collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    <button class="btn btn-link">
+                        Who needs a zoning report?
+                    </button>
+                </h5>
+            </div>
+            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                <div class="card-body">
+                    Many different organizations and individuals use Zoning reports. Attorneys, lenders, surveyors, property investors and commercial property purchases looking to locate their business at a certain location
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header" id="headingThree">
+                <h5 class="mb-0 collapsed"  data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    <button class="btn btn-link">
+                        Why should I consider a zoning report?
+                    </button>
+                </h5>
+            </div>
+            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                <div class="card-body">
+                    Different groups have different reasons for needing a zoning report. Of all the groups each realize that a zoning report can save significant amounts of money and mitigate risk. Some groups need a report to verify the zoning of a property and verify that their proposed use for the property is allowed. Some groups need a report to verify that the current use of the property will be allowed when the property changes hands or is damaged due to fire, flood or accidental destruction. Some groups use our reports as an augmentation to their own research this allows professionals from other sectors like surveyors, lenders and zoning attorneys to minimize their risk of providing information that may not be their core competency. Reliant specializes in Zoning research and can do it efficiently and completely. Zoning research is all we do.
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header" id="heading4">
+                <h5 class="mb-0 collapsed"  data-toggle="collapse" data-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+                    <button class="btn btn-link">
+                        Why Reliant?
+                    </button>
+                </h5>
+            </div>
+            <div id="collapse4" class="collapse" aria-labelledby="heading4" data-parent="#accordion">
+                <div class="card-body">
+                    As land developers and former municipal planners, Reliant looks at zoning differently and can provide insights on what are potentially risky issues that may cost you money and what issues are will not amount to problems and can be ignored. Often municipalities intend for their zoning ordinances to be very clear however many have vague clauses that can leave its meaning up to interpretation<br><br>
+                    Reviewers carry bachelor’s degrees in land use and real estate with a wide range of experiences and educations across all facets of land use and development.
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header" id="heading5">
+                <h5 class="mb-0 collapsed"  data-toggle="collapse" data-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
+                    <button class="btn btn-link">
+                        Why reliant reports are better?
+                    </button>
+                </h5>
+            </div>
+            <div id="collapse5" class="collapse" aria-labelledby="heading5" data-parent="#accordion">
+                <div class="card-body">
+                    Reliant uses researchers that carry bachelors and masters degrees from some of the best universities in the world. After the research is completed experienced developers and planners review the results of the research and verify the information to be accurate and complete. This two-stage process insures that the complexities of the zoning code are looked at by multiple people to help avoid errors omissions and inaccuracies
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header" id="heading6">
+                <h5 class="mb-0 collapsed"  data-toggle="collapse" data-target="#collapse6" aria-expanded="false" aria-controls="collapse6">
+                    <button class="btn btn-link">
+                        How do I know the information provided is accurate?
+                    </button>
+                </h5>
+            </div>
+            <div id="collapse6" class="collapse" aria-labelledby="heading6" data-parent="#accordion">
+                <div class="card-body">
+                    Reliant obtains the most recent zoning ordinance from the municipality when you request your report. Some of the other organizations utilize libraries of ordinances that have been collected from years of being in business and never renewed. Each report is also accompanied by a zoning verification letter (if available) provided by the municipality that further ensures that you are getting the most accurate and up to date information. Each essential zoning and land use report is covered by 2m in errors and omissions insurance to show commitment in our reports and give you piece of mind that the information provided is reliable.
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header" id="heading7">
+                <h5 class="mb-0 collapsed"  data-toggle="collapse" data-target="#collapse7" aria-expanded="false" aria-controls="collapse7">
+                    <button class="btn btn-link">
+                        In what municipalities does Reliant Due Diligence provide reports?
+                    </button>
+                </h5>
+            </div>
+            <div id="collapse7" class="collapse" aria-labelledby="heading7" data-parent="#accordion">
+                <div class="card-body">
+                    Reliant can produce reports from just about every municipality in the US. Some of the smallest municipalities that haven’t digitized their ordinances yet may add a few days to the report turn around however it is extremely rare for that to be the case.
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header" id="heading8">
+                <h5 class="mb-0 collapsed"  data-toggle="collapse" data-target="#collapse8" aria-expanded="false" aria-controls="collapse8">
+                    <button class="btn btn-link">
+                        What information is needed from me to produce a report?
+                    </button>
+                </h5>
+            </div>
+            <div id="collapse8" class="collapse" aria-labelledby="heading8" data-parent="#accordion">
+                <div class="card-body">
+                    The more information that you can provide the better. At the very minimum would be a Tax ID number or street address and the name of the municipality. The more information that is provided will aide us in turning around the report faster and with greater accuracy.
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header" id="heading9">
+                <h5 class="mb-0 collapsed"  data-toggle="collapse" data-target="#collapse9" aria-expanded="false" aria-controls="collapse9">
+                    <button class="btn btn-link">
+                        How long will it take to get the report?
+                    </button>
+                </h5>
+            </div>
+            <div id="collapse9" class="collapse" aria-labelledby="heading9" data-parent="#accordion">
+                <div class="card-body">
+                    Reliant Due Diligence can provide a draft in as little as 72 hours. There are many factors that affect the timing of the reports completion. The most significant predictor of the time to complete the report is the responsiveness of the municipality. Once contact has been made with the municipality and the ordinance has been obtained the final report can be completed in 5 - 7 business days.
+                </div>
+            </div>
+        </div>
+    </div>
 @endsection

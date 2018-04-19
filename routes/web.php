@@ -22,6 +22,7 @@ Route::get('/blog', 'CMS\CmsController@index')->name('blog');
 Route::get('/contact', 'CMS\CmsController@index')->name('contact');
 Route::post('/contact', 'CMS\CmsController@post')->name('postContact');
 Route::get('/zone', 'Form\FormController@index')->name('zone');
+Route::get('/zoneForm', 'Form\FormController@index')->name('zoneForm');
 //Route::get('/customerInfo', 'Form\FormController@index')->name('customerInfo');
 Route::post('/zone', 'Form\FormController@post')->name('postZone');
 Route::get('/termsCondition', 'CMS\CmsController@index')->name('termsCondition');

@@ -13,7 +13,7 @@
             <li class="nav-item  {{ Request::path() ==  '/' ? 'active' : ''  }}">
                 <a class="nav-link" href="{{route('home')}}">Home <span class="sr-only"></span></a>
             </li>
-            <li class="nav-item {{ Request::path() ==  'zone' ? 'active' : ''  }}">
+            <li class="nav-item {{ (in_array(Request::path() ,  ['zone','zoneForm']) )? 'active' : ''  }}">
                 <a class="nav-link" href="{{route('zone')}}">Zoning Report </a>
             </li>
             <li class="nav-item {{ Request::path() ==  'faq' ? 'active' : ''  }}">
@@ -22,7 +22,7 @@
             <li class="nav-item {{ Request::path() ==  'about' ? 'active' : ''  }}">
                 <a class="nav-link" href="{{route('about')}}">About </a>
             </li>
-            <li class="nav-item {{ (Request::path() ==  'updates' ||Request::path() ==  'blog') ? 'active' : ''  }} dropdown">
+            <li class="nav-item {{ (in_array(Request::path() ,  ['updates','blog']) ) ? 'active' : ''  }} dropdown">
                 <a class="nav-link dropdown-toggle" href="{{route('updates')}}" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Updates
                 </a>
