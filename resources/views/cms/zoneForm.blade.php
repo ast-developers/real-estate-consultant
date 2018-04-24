@@ -3,6 +3,12 @@
 @section('content')
     <div class="container">
         <div class="row">
+            <div class="col-lg-12">
+                <p>To place an order please fill out the following four forms. The more information you can provide regarding the subject property the faster the report creation process will be completed. The absolute minimum for a report is the subject property address, or survey showing the subject property.
+                    A confirmation email will be sent to the email address provided in the customer information page.
+                </p>
+                <p>If you have multiple unrelated projects please fill out a form for each property. For projects that contain multiple parcels that share similar characteristics please contact us before submitting forms via our contact page.</p>
+            </div>
             <section class="col-md-12">
                 <div class="wizard">
                     <div class="wizard-inner">
