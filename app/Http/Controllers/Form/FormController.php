@@ -37,7 +37,6 @@ class FormController
             $billingInfo = $request['billingInfo'];
 			$data=[];
 			$attachments=[];
-
 			if($request->hasfile('fileInfo'))
 			{
 				foreach($request->file('fileInfo') as $file)
@@ -77,7 +76,7 @@ class FormController
             $attachments[] = $file_path;
 
             Mail::send('emails.mail', [], function ($m) use ($attachments) {
-                $m->to(env('MAIL_BILLING_EMAIL'));
+                $m->to(env('MAIL_BILLING_TO_EMAIL'));
                 $m->subject(env('APP_NAME') . ' | Billing Info');
 				foreach ($attachments as $attach){
 					$m->attach($attach);

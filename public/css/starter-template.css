@@ -176,6 +176,15 @@ img.img-responsive.hero-banner{
 .card-header h5[aria-expanded="true"] button.btn.btn-link {
     color: #60412b;
 }
+.form-group:last-child {
+    margin-bottom: 0;
+}
+.form-group.row.has-error label,
+.form-group.row.has-error textarea,
+.form-group.row.has-error input.form-control {
+    border-color: rgb(169, 68, 66);
+    color: rgb(169, 68, 66);
+}
 @media (min-width:1200px){
 
     nav.topmenu {
