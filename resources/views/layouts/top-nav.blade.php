@@ -13,8 +13,8 @@
             <li class="nav-item  {{ Request::path() ==  '/' ? 'active' : ''  }}">
                 <a class="nav-link" href="{{route('home')}}">Home <span class="sr-only"></span></a>
             </li>
-            <li class="nav-item {{ (in_array(Request::path() ,  ['zone','zoneForm']) )? 'active' : ''  }}">
-                <a class="nav-link" href="{{route('zone')}}">Zoning Report </a>
+            <li class="nav-item {{ (in_array(Request::path() ,['services','zoneForm']) )? 'active' : ''  }}">
+                <a class="nav-link" href="{{route('services')}}">Services</a>
             </li>
             <li class="nav-item {{ Request::path() ==  'faq' ? 'active' : ''  }}">
                 <a class="nav-link" href="{{route('faq')}}">FAQ </a>
