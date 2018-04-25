@@ -22,6 +22,9 @@
 
     <div class="contact-us">
         <div class="row">
+            <div class="col-lg-12">
+                <p>Have Questions, comments, issues that you would like to discuss with us. Reach out to us using this form. This is the best way to contact us as we have noses in the ordinances most of the time and only come up for a breath when we run out of coffee. If you need to talk to someone please call us and leave a detailed message if you don't reach us.</p>
+            </div>
             <div class="col-lg-6">
                 <form method="post" action="{{route('postContact')}}">
                     {{ csrf_field() }}

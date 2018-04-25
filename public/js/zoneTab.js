@@ -66,6 +66,9 @@ $(document).ready(function () {
                 required: true,
                 email: true
             },
+            'terms':{
+                required:true
+            }
 
 
         }
