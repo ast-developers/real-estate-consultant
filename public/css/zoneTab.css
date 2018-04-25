@@ -26,7 +26,9 @@
     z-index: 1;
 }
 
-.wizard .nav-tabs > li.active > a, .wizard .nav-tabs > li.active > a:hover, .wizard .nav-tabs > li.active > a:focus {
+.wizard .nav-tabs > li.active > a,
+.wizard .nav-tabs > li.active > a:hover,
+.wizard .nav-tabs > li.active > a:focus {
     color: #555555;
     cursor: default;
     border: 0;
@@ -54,12 +56,13 @@ span.round-tab i{
     position: relative;
     top: 50%;
 }
-.wizard li.active span.round-tab {
+
+.wizard li a.btn.active span.round-tab {
     background: #fff;
     border: 2px solid #9c8c40;
 
 }
-.wizard li.active span.round-tab i{
+.wizard li a.btn.active span.round-tab i{
     color: #9c8c40;
 }
 
@@ -72,7 +75,11 @@ span.round-tab:hover {
     width: 25%;position: relative;
 }
 
-.wizard li:after {
+.wizard ul li.disabled{
+    opacity: 1;
+}
+
+.wizard li a.btn:after {
     content: " ";
     position: absolute;
     left: 46%;
@@ -84,13 +91,13 @@ span.round-tab:hover {
     transition: 0.1s ease-in-out;
 }
 
-.wizard li.active:after {
+.wizard li a.btn.active:after {
     content: " ";
     position: absolute;
-    left: 46%;
+    left: 36%;
     opacity: 1;
     margin: 0 auto;
-    bottom: 0px;
+    bottom: -20px;
     border: 10px solid transparent;
     border-bottom-color: #9c8c40;
 }
@@ -112,7 +119,7 @@ span.round-tab:hover {
 .wizard .tab-pane {
     position: relative;
 }
-
+.wizard .tab-pane.active{display: block !important;}
 .wizard h3 {
     margin-top: 0;
 }
@@ -134,6 +141,19 @@ button.btn.btn-default:hover {
 span.round-tab:hover i {
     color: #9c8c40;
 }
+
+.stepwizard-step .disabled {
+    opacity: 1 !important;
+    filter: alpha(opacity=100) !important;
+}
+.wizard .btn-primary:not(:disabled):not(.disabled).active,
+.wizard .btn-primary:not(:disabled):not(.disabled):active {
+    color: #fff;
+    background-color: transparent;
+    border-color: transparent;
+}
+
+
 @media( max-width : 585px ) {
 
     .wizard {
