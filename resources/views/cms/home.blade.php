@@ -5,7 +5,9 @@
     <h1>Reliant Due Diligence LLC</h1><br>
     <div>
         <p>Already Familiar with our process? --><a class="nav-link zonereport" href="{{route('services')}}">Order your Essential Zoning Report Now </a></p>
-        <p>Reliant Due Diligence provides a core product, that is the <strong>Essential Zoning Report</strong>. This report is designed to provide the critical information for surveyors, lenders, attorneys and property purchasers the most up to date reliable information regarding land use and zoning.</p>
+
+        <p>Reliant Due Diligence provides a core product, the <strong>Essential Zoning Report</strong>. This report is designed to provide critical information for surveyors, lenders, attorneys and property purchasers the most up to date reliable information regarding land use and zoning.</p>
+
         <div class="row">
             <div class="col-md-6">
                 <p>Each Essential Zoning Report Includes:</p>

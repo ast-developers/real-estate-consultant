@@ -2,7 +2,9 @@
 
 @section('content')
     <h1>FAQ's</h1><br>
-    <p>We attempt to make our reports and systems as easy to use as possible. If you have questions see the below Frequently Asked Questions of our reports and process. We update them regularly to help to keep our customers informed. If you still have questions or suggestions please contact us through our contact page and someone will respond to you as soon as possible.</p>
+
+    <p>We attempt to make our reports and systems as easy to use as possible. If you have questions see the below Frequently Asked Questions of our reports and process. We update them regularly to help keep our customers informed. If you still have questions or suggestions please contact us through our contact page and someone will respond to you as soon as possible.</p>
+
     <img class="img-responsive mb-3 hero-banner" src="{!! url('public/images/faq.jpg') !!}">
     <div id="accordion">
         <div class="card">
