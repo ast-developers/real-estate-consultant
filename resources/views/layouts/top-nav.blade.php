@@ -30,8 +30,6 @@
                     <a class="dropdown-item" href="{{route('blog')}}">Blog</a>
                 </div>
             </li>
-
-
             <li class="nav-item {{ Request::path() ==  'contact' ? 'active' : ''  }}">
                 <a class="nav-link" href="{{route('contact')}}">Contact </a>
             </li>
