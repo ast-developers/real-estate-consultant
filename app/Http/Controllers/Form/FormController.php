@@ -85,7 +85,7 @@ class FormController
 
             return redirect('contact')->with('success', 'Thank You !!!.....We are Contacted in less than 48 hours.');
         } catch (\Exception $e) {
-            return redirect('zone')->with('error', 'Something went wrong.');
+            return redirect('zoneForm')->with('error', 'Something went wrong.');
         }
     }
 
